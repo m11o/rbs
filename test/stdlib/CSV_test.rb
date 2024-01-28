@@ -1,13 +1,7 @@
 # frozen_string_literal: true
 
 require_relative "test_helper"
-
-if RUBY_VERSION > '3.3'
-  gem 'csv', '>= 3.2.8'
-  require 'csv'
-else
-  require 'csv'
-end
+require 'csv'
 
 class CSVSingletonTest < StdlibTest
   include TestHelper
